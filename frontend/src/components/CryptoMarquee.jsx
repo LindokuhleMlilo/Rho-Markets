@@ -17,7 +17,7 @@ const CryptoMarquee = () => {
   const duplicatedTokens = [...tokens, ...tokens];
 
   return (
-    <div className="overflow-hidden whitespace-nowrap bg-gray-800 py-4 mt-24 mb-12">
+    <div className="overflow-hidden whitespace-nowrap bg-gray-600 py-4 mt-24 mb-12">
       <div className="inline-block animate-marquee">
         {duplicatedTokens.map((token, index) => (
           <div key={index} className="inline-flex items-center mx-8">
