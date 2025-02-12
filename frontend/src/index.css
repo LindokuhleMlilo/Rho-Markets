@@ -15,19 +15,18 @@
   }
 
 
-/* Custom 3D Background Animation */
-@keyframes rotateBackground {
+  @keyframes rotateBackground {
     0% {
-      transform: rotate(3deg) scale(1.05);
+      transform: rotate(20deg) scale(1.05);
     }
     50% {
-      transform: rotate(-3deg) scale(1.05);
+      transform: rotate(-20deg) scale(1.05);
     }
     100% {
-      transform: rotate(3deg) scale(1.05);
+      transform: rotate(20deg) scale(1.05);
     }
-  }
+}
   
-  .hero-background {
+.hero-background {
     animation: rotateBackground 10s infinite ease-in-out;
-  }
+}

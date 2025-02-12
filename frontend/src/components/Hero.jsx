@@ -2,11 +2,11 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-gray-900 overflow-hidden">
+    <div className="relative py-20 flex items-center justify-center bg-black overflow-hidden">
       {/* 3D Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-900 to-black transform rotate-3 scale-105 hero-background"></div>
-        <div className="absolute inset-0 bg-gradient-to-tl from-gray-800 via-gray-900 to-black transform -rotate-3 scale-105 hero-background"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-yellow-600 via-gray-900 to-black transform rotate-3 scale-105 hero-background"></div>
+        <div className="absolute inset-0 bg-gradient-to-tl from-yellow-700 via-gray-900 to-black transform -rotate-3 scale-105 hero-background"></div>
       </div>
 
       {/* Hero Content */}
