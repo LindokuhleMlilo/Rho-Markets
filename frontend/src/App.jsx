@@ -4,7 +4,9 @@ import Hero from './components/Hero';
 import CryptoMarquee from './components/CryptoMarquee';
 import Features from './components/Features';
 import LendBorrowEngage from './components/LendBorrowEngage';
+import StatsComponent from './components/StatsComponent';
 import Footer from './components/Footer';
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
       <CryptoMarquee />
       <Features />
       <LendBorrowEngage />
+      <StatsComponent />
       <Footer />
     </div>
   );
