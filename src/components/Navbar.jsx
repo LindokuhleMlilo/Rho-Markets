@@ -1,9 +1,20 @@
+// src/components/Navbar.jsx
 import React from 'react';
-import { ConnectButton } from "thirdweb/react";
+import { ConnectButton, useActiveAccount } from "thirdweb/react"; // Updated import
 import { client } from "../client";
-import "../styles.css"; 
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+  const account = useActiveAccount(); // Use useActiveAccount to get the connected wallet
+  const navigate = useNavigate();
+
+  // Redirect to dashboard if wallet is connected
+  React.useEffect(() => {
+    if (account?.address) {
+      navigate('/dashboard');
+    }
+  }, [account?.address, navigate]);
+
   return (
     <nav className="flex justify-between items-center p-6">
       <div className="text-2xl font-bold">Rho Markets</div>
@@ -15,7 +26,14 @@ const Navbar = () => {
         <ConnectButton
           client={client}
           theme="dark"
-          className="custom-connect-button" 
+          style={{
+            backgroundColor: "#FBBF24",
+            color: "#1F2937",
+            fontWeight: "bold",
+            padding: "8px 16px",
+            borderRadius: "8px",
+            transition: "background-color 0.3s",
+          }}
           connectModal={{
             size: "wide",
             title: "Connect to Rho Markets",
