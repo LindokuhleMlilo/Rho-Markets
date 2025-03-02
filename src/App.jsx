@@ -9,6 +9,8 @@ import LendBorrowEngage from './components/LendBorrowEngage';
 import StatsComponent from './components/StatsComponent';
 import Footer from './components/Footer';
 import Dashboard from './components/Dashboard';
+import Pricing from './components/Pricing'; // Create this component
+import Contact from './components/Contact'; // Create this component
 
 function App() {
   return (
@@ -30,6 +32,9 @@ function App() {
             }
           />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>

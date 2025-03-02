@@ -1,28 +1,29 @@
 // src/components/Navbar.jsx
 import React from 'react';
-import { ConnectButton, useActiveAccount } from "thirdweb/react"; // Updated import
+import { ConnectButton, useActiveAccount } from "thirdweb/react";
 import { client } from "../client";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link, useLocation } from 'react-router-dom'; // Add useLocation
 
 const Navbar = () => {
-  const account = useActiveAccount(); // Use useActiveAccount to get the connected wallet
+  const account = useActiveAccount();
   const navigate = useNavigate();
+  const location = useLocation(); // Get the current route
 
-  // Redirect to dashboard if wallet is connected
+  // Redirect to dashboard if wallet is connected and not already on the homepage
   React.useEffect(() => {
-    if (account?.address) {
+    if (account?.address && location.pathname !== '/') {
       navigate('/dashboard');
     }
-  }, [account?.address, navigate]);
+  }, [account?.address, navigate, location.pathname]); // Add location.pathname to dependencies
 
   return (
     <nav className="flex justify-between items-center p-6">
       <div className="text-2xl font-bold">Rho Markets</div>
       <div className="flex items-center space-x-4">
-        <a href="#" className="hover:text-yellow-400">Home</a>
-        <a href="#" className="hover:text-yellow-400">Features</a>
-        <a href="#" className="hover:text-yellow-400">Pricing</a>
-        <a href="#" className="hover:text-yellow-400">Contact</a>
+        <Link to="/" className="hover:text-yellow-400">Home</Link>
+        <Link to="/features" className="hover:text-yellow-400">Features</Link>
+        <Link to="/pricing" className="hover:text-yellow-400">Pricing</Link>
+        <Link to="/contact" className="hover:text-yellow-400">Contact</Link>
         <ConnectButton
           client={client}
           theme="dark"
