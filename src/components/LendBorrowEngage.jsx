@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCoins, FaHandHoldingUsd, FaGamepad } from 'react-icons/fa'; // Icons for Lend, Borrow, Engage
+import { FaCoins, FaHandHoldingUsd, FaGamepad } from 'react-icons/fa'; 
 
 const LendBorrowEngage = () => {
   return (

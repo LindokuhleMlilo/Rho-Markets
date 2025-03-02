@@ -1,0 +1,13 @@
+/* src/styles.css */
+.custom-connect-button {
+    background-color: #FBBF24 !important;
+    color: #1F2937 !important;
+    font-weight: bold !important;
+    padding: 8px 16px !important;
+    border-radius: 8px !important;
+    transition: background-color 0.3s !important;
+  }
+  
+  .custom-connect-button:hover {
+    background-color: #F59E0B !important; /* Darker yellow on hover */
+  }
