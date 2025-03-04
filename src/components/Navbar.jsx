@@ -3,6 +3,8 @@ import React, { useRef } from 'react';
 import { ConnectButton, useActiveAccount } from "thirdweb/react";
 import { client } from "../client";
 import { useNavigate, Link, useLocation } from 'react-router-dom'; // Add useLocation
+import { defineChain } from 'thirdweb';
+
 
 const Navbar = () => {
   const account = useActiveAccount();
@@ -40,6 +42,10 @@ const Navbar = () => {
           connectModal={{
             size: "wide",
             title: "Connect to Rho Markets",
+          }}
+          accountAbstraction={{
+            chain: defineChain(1135), // replace with the chain you want
+            sponsorGas: true,
           }}
         />
       </div>
