@@ -1,33 +1,46 @@
-
 import React from 'react';
+import { FiTrendingUp } from 'react-icons/fi'; // Import the graph icon
 
 const Market = () => {
   return (
     <div className="bg-gray-900 text-white min-h-screen p-6">
-
       {/* Wallet Info */}
       <div className="bg-gray-800 p-6 rounded-lg mb-8">
         <div className="flex justify-between items-center">
+          {/* Total Market Size */}
           <div className="flex items-center space-x-4">
+            <div className="text-center">
+              <p className="text-4xl font-bold">31,659,685.23</p>
+              <div className="flex items-center justify-center space-x-2">
+                <FiTrendingUp className="h-4 w-4 text-yellow-400" /> 
+                <p className="text-gray-400 text-lg">Market Size</p>
+              </div>
+            </div>
+          </div>
 
-          </div>
+          {/* Total Borrowed */}
           <div className="flex items-center space-x-4">
-            <span className="text-gray-400">Total Market Size</span>
-            <span className="text-lg font-bold">8,747,270.53</span>
+            <div className="text-center">
+              <p className="text-4xl font-bold">8,747,270.53</p>
+              <div className="flex items-center justify-center space-x-2">
+                <FiTrendingUp className="h-4 w-4 text-yellow-400" /> 
+                <p className="text-gray-400 text-lg">Total Borrowed</p>
+              </div>
+            </div>
           </div>
+
+          {/* Total Available */}
           <div className="flex items-center space-x-4">
-            <span className="text-gray-400">Total Borrow</span>
-            <span className="text-lg font-bold">1,513,745.97</span>
-          </div>
-          <div className="flex items-center space-x-4">
-            <span className="text-gray-400">Total Available</span>
-            <span className="text-lg font-bold">6,233,524.56</span>
+            <div className="text-center">
+              <p className="text-4xl font-bold">1,513,745.97</p>
+              <div className="flex items-center justify-center space-x-2">
+                <FiTrendingUp className="h-4 w-4 text-yellow-400" /> 
+                <p className="text-gray-400 text-lg">Total Available</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-     
-      
 
       {/* Markets Section */}
       <div className="bg-gray-800 p-6 rounded-lg">
@@ -65,10 +78,10 @@ const Market = () => {
                   <span>ETH</span>
                 </td>
                 <td className="px-6 py-4">Open</td>
-                <td className="px-6 py-4">80.00%</td>
+                <td className="px-6 py-4 text-yellow-400">80.00%</td>
                 <td className="px-6 py-4">566.88</td>
-                <td className="px-6 py-4">1.65%</td>
-                <td className="px-6 py-4">3.37%</td>
+                <td className="px-6 py-4 text-yellow-400">1.65%</td> {/* Yellow percentage */}
+                <td className="px-6 py-4 text-yellow-400">3.37%</td> {/* Yellow percentage */}
                 <td className="px-6 py-4">373.44</td>
                 <td className="px-6 py-4">$486,607.30</td>
               </tr>
