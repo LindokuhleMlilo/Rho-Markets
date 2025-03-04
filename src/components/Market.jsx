@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiTrendingUp } from 'react-icons/fi'; // Import the graph icon
+import { FiTrendingUp } from 'react-icons/fi'; 
 
 const Market = () => {
   return (
@@ -12,7 +12,7 @@ const Market = () => {
             <div className="text-center">
               <p className="text-4xl font-bold">31,659,685.23</p>
               <div className="flex items-center justify-center space-x-2">
-                <FiTrendingUp className="h-4 w-4 text-yellow-400" /> {/* Yellow graph icon */}
+                <FiTrendingUp className="h-4 w-4 text-yellow-400" /> 
                 <p className="text-gray-400 text-lg">Market Size</p>
               </div>
             </div>
@@ -23,7 +23,7 @@ const Market = () => {
             <div className="text-center">
               <p className="text-4xl font-bold">8,747,270.53</p>
               <div className="flex items-center justify-center space-x-2">
-                <FiTrendingUp className="h-4 w-4 text-yellow-400" /> {/* Yellow graph icon */}
+                <FiTrendingUp className="h-4 w-4 text-yellow-400" /> 
                 <p className="text-gray-400 text-lg">Total Borrowed</p>
               </div>
             </div>
@@ -34,7 +34,7 @@ const Market = () => {
             <div className="text-center">
               <p className="text-4xl font-bold">1,513,745.97</p>
               <div className="flex items-center justify-center space-x-2">
-                <FiTrendingUp className="h-4 w-4 text-yellow-400" /> {/* Yellow graph icon */}
+                <FiTrendingUp className="h-4 w-4 text-yellow-400" /> 
                 <p className="text-gray-400 text-lg">Total Available</p>
               </div>
             </div>
@@ -87,7 +87,7 @@ const Market = () => {
               </tr>
 
               {/* ETH */}
-              <tr className="border-b border-gray-700">
+              <tr className="border-b border-gray-700 bg-gray-700">
                 <td className="px-6 py-4 flex items-center space-x-2">
                   <img src="/eth.png" alt="ETH" className="h-6" />
                   <span>ETH</span>
@@ -117,7 +117,7 @@ const Market = () => {
               </tr>
 
               {/* USDC */}
-              <tr className="border-b border-gray-700">
+              <tr className="border-b border-gray-700 bg-gray-700">
                 <td className="px-6 py-4 flex items-center space-x-2">
                   <img src="/usdc.png" alt="USDC" className="h-6" />
                   <span>USDC</span>
@@ -147,7 +147,7 @@ const Market = () => {
               </tr>
 
               {/* wstETH */}
-              <tr className="border-b border-gray-700">
+              <tr className="border-b border-gray-700 bg-gray-700">
                 <td className="px-6 py-4 flex items-center space-x-2">
                   <img src="/wsteth.png" alt="wstETH" className="h-6" />
                   <span>wstETH</span>
@@ -177,7 +177,7 @@ const Market = () => {
               </tr>
 
               {/* wrsETH */}
-              <tr className="border-b border-gray-700">
+              <tr className="border-b border-gray-700 bg-gray-700">
                 <td className="px-6 py-4 flex items-center space-x-2">
                   <img src="/wrseth.png" alt="wrsETH" className="h-6" />
                   <span>wrsETH</span>
@@ -207,7 +207,7 @@ const Market = () => {
               </tr>
 
               {/* SolvBTC.b */}
-              <tr className="border-b border-gray-700">
+              <tr className="border-b border-gray-700 bg-gray-700">
                 <td className="px-6 py-4 flex items-center space-x-2">
                   <img src="/solvbtc.png" alt="SolvBTC.b" className="h-6" />
                   <span>SolvBTC.b</span>
@@ -237,7 +237,7 @@ const Market = () => {
               </tr>
 
               {/* uniETH */}
-              <tr className="border-b border-gray-700">
+              <tr className="border-b border-gray-700 bg-gray-700">
                 <td className="px-6 py-4 flex items-center space-x-2">
                   <img src="/unieth.png" alt="uniETH" className="h-6" />
                   <span>uniETH</span>
