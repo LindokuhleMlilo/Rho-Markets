@@ -2,6 +2,11 @@ import React from 'react';
 import { FiTrendingUp } from 'react-icons/fi'; 
 
 const Market = () => {
+  
+  const handleRowClick = (asset) => {
+    console.log(`Row clicked for asset: ${asset}`);
+     
+  };
   return (
     <div className="bg-gray-900 text-white min-h-screen p-6">
       {/* Wallet Info */}
@@ -72,7 +77,7 @@ const Market = () => {
             </thead>
             <tbody>
               {/* SCR */}
-              <tr className="border-b border-gray-700">
+              <tr className="border-b border-gray-700 hover:bg-gray-600 cursor-pointer">
                 <td className="px-6 py-4 flex items-center space-x-2">
                   <img src="/scr.png" alt="SCR" className="h-6" />
                   <span>SCR</span>
@@ -87,7 +92,7 @@ const Market = () => {
               </tr>
 
               {/* ETH */}
-              <tr className="border-b border-gray-700 bg-gray-700">
+              <tr className="border-b border-gray-700 bg-gray-700 hover:bg-gray-600 cursor-pointer">
                 <td className="px-6 py-4 flex items-center space-x-2">
                   <img src="/eth.png" alt="ETH" className="h-6" />
                   <span>ETH</span>
@@ -102,7 +107,7 @@ const Market = () => {
               </tr>
 
               {/* STONE */}
-              <tr className="border-b border-gray-700">
+              <tr className="border-b border-gray-700 hover:bg-gray-600 cursor-pointer">
                 <td className="px-6 py-4 flex items-center space-x-2">
                   <img src="/stone.png" alt="STONE" className="h-6" />
                   <span>STONE</span>
@@ -117,7 +122,7 @@ const Market = () => {
               </tr>
 
               {/* USDC */}
-              <tr className="border-b border-gray-700 bg-gray-700">
+              <tr className="border-b border-gray-700 bg-gray-700 hover:bg-gray-600 cursor-pointer">
                 <td className="px-6 py-4 flex items-center space-x-2">
                   <img src="/usdc.png" alt="USDC" className="h-6" />
                   <span>USDC</span>
@@ -132,7 +137,7 @@ const Market = () => {
               </tr>
 
               {/* USDT */}
-              <tr className="border-b border-gray-700">
+              <tr className="border-b border-gray-700 hover:bg-gray-600 cursor-pointer">
                 <td className="px-6 py-4 flex items-center space-x-2">
                   <img src="/usdt.png" alt="USDT" className="h-6" />
                   <span>USDT</span>
@@ -147,7 +152,7 @@ const Market = () => {
               </tr>
 
               {/* wstETH */}
-              <tr className="border-b border-gray-700 bg-gray-700">
+              <tr className="border-b border-gray-700 bg-gray-700 hover:bg-gray-600 cursor-pointer">
                 <td className="px-6 py-4 flex items-center space-x-2">
                   <img src="/wsteth.png" alt="wstETH" className="h-6" />
                   <span>wstETH</span>
@@ -162,7 +167,7 @@ const Market = () => {
               </tr>
 
               {/* weETH */}
-              <tr className="border-b border-gray-700">
+              <tr className="border-b border-gray-700 hover:bg-gray-600 cursor-pointer">
                 <td className="px-6 py-4 flex items-center space-x-2">
                   <img src="/weeth.png" alt="weETH" className="h-6" />
                   <span>weETH</span>
@@ -177,7 +182,7 @@ const Market = () => {
               </tr>
 
               {/* wrsETH */}
-              <tr className="border-b border-gray-700 bg-gray-700">
+              <tr className="border-b border-gray-700 bg-gray-700 hover:bg-gray-600 cursor-pointer">
                 <td className="px-6 py-4 flex items-center space-x-2">
                   <img src="/wrseth.png" alt="wrsETH" className="h-6" />
                   <span>wrsETH</span>
@@ -192,7 +197,7 @@ const Market = () => {
               </tr>
 
               {/* USDe */}
-              <tr className="border-b border-gray-700">
+              <tr className="border-b border-gray-700 hover:bg-gray-600 cursor-pointer">
                 <td className="px-6 py-4 flex items-center space-x-2">
                   <img src="/usde.png" alt="USDe" className="h-6" />
                   <span>USDe</span>
@@ -207,7 +212,7 @@ const Market = () => {
               </tr>
 
               {/* SolvBTC.b */}
-              <tr className="border-b border-gray-700 bg-gray-700">
+              <tr className="border-b border-gray-700 bg-gray-700 hover:bg-gray-600 cursor-pointer">
                 <td className="px-6 py-4 flex items-center space-x-2">
                   <img src="/solvbtc.png" alt="SolvBTC.b" className="h-6" />
                   <span>SolvBTC.b</span>
@@ -222,7 +227,7 @@ const Market = () => {
               </tr>
 
               {/* ylstETH */}
-              <tr className="border-b border-gray-700">
+              <tr className="border-b border-gray-700 hover:bg-gray-600 cursor-pointer">
                 <td className="px-6 py-4 flex items-center space-x-2">
                   <img src="/ylsteth.png" alt="ylstETH" className="h-6" />
                   <span>ylstETH</span>
@@ -237,7 +242,7 @@ const Market = () => {
               </tr>
 
               {/* uniETH */}
-              <tr className="border-b border-gray-700 bg-gray-700">
+              <tr className="border-b border-gray-700 bg-gray-700 hover:bg-gray-600 cursor-pointer">
                 <td className="px-6 py-4 flex items-center space-x-2">
                   <img src="/unieth.png" alt="uniETH" className="h-6" />
                   <span>uniETH</span>
